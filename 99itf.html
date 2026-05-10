@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Player</title>
+
+<style>
+body{
+    margin:0;
+    background:#0F171E;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial,sans-serif;
+}
+
+.player{
+    width:90%;
+    max-width:1000px;
+}
+
+video{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,0.7);
+}
+</style>
+</head>
+<body>
+
+<div class="player">
+    <video controls autoplay>
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+</div>
+
+</body>
+</html>
